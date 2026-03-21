@@ -4,7 +4,7 @@
 
 | 项目 | 说明 |
 |------|------|
-| 基础地址 | `https://api.jusiai.com` |
+| 基础地址 | `https://service.jusiai.com` |
 | API 前缀 | `/api/v1.0` |
 | 数据格式 | JSON |
 | 字符编码 | UTF-8 |
@@ -18,7 +18,7 @@
 ### 请求
 
 ```
-POST https://api.jusiai.com/api/v1.0/customer_info
+POST https://service.jusiai.com/api/v1.0/customer_info
 Content-Type: application/json
 ```
 
@@ -89,7 +89,7 @@ Content-Type: application/json
 ### cURL
 
 ```bash
-curl -X POST https://api.jusiai.com/api/v1.0/customer_info \
+curl -X POST https://service.jusiai.com/api/v1.0/customer_info \
   -H "Content-Type: application/json" \
   -d '{
     "name": "张三",
@@ -105,7 +105,7 @@ curl -X POST https://api.jusiai.com/api/v1.0/customer_info \
 ```python
 import requests
 
-url = "https://api.jusiai.com/api/v1.0/customer_info"
+url = "https://service.jusiai.com/api/v1.0/customer_info"
 data = {
     "name": "张三",
     "phone": "13800138000",
@@ -121,7 +121,7 @@ print(response.json())
 ### JavaScript (fetch)
 
 ```javascript
-const response = await fetch('https://api.jusiai.com/api/v1.0/customer_info', {
+const response = await fetch('https://service.jusiai.com/api/v1.0/customer_info', {
   method: 'POST',
   headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify({
@@ -140,7 +140,7 @@ console.log(result);
 ### 仅填写必填字段
 
 ```bash
-curl -X POST https://api.jusiai.com/api/v1.0/customer_info \
+curl -X POST https://service.jusiai.com/api/v1.0/customer_info \
   -H "Content-Type: application/json" \
   -d '{
     "name": "李四",
