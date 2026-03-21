@@ -9,7 +9,7 @@ class Settings(BaseSettings):
     db_name: str = "jusi_db"
 
     # 其他配置项
-    api_vstr: str = "/api/v1"
+    api_vstr: str = "/api/v1.0"
     app_name: str = "JUSI CMS"
     app_version: str = "1.0.0"
     bind_addr: str = "0.0.0.0"

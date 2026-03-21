@@ -28,19 +28,12 @@ async def lifespan(app: FastAPI):
     await init_db()
     logger.info("数据库连接池已初始化")
 
-    # 启动心跳监控
-    #await manager.start_heartbeat_monitor()
-
     logger.info("应用启动完成")
     
     yield  # 应用运行中
     
     # 关闭事件
     logger.info("应用正在关闭...")
-
-    # 关闭所有 WebSocket 连接
-    #for connection_id in list(manager.active_connections.keys()):
-    #    await manager.disconnect(connection_id, reason="服务器关闭")
 
     # 关闭数据库连接
     await close_db()

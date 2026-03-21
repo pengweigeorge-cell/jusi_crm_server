@@ -1,5 +1,5 @@
 '''
-JUSI CRM 服务接口
+JUSI CRM (Customer Relationship Management) 服务接口
 '''
 import re
 import logging
@@ -35,4 +35,3 @@ async def save_customer_info(customer_info: CustomerInfo):
         return ResponseModel(code=500, message="保存客户信息失败")
 
     return ResponseModel(code=200, message="ok")
-

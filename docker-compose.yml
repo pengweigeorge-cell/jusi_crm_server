@@ -1,8 +1,6 @@
 # JUSI CRM 服务器应用部署
 # 依赖于 jusi_infrastructure 项目提供的 MySQL 服务
 # 使用前请先启动基础设施项目：cd ../jusi_infrastructure && docker-compose up -d
-version: '3.8'
-
 services:
   # CRM 服务器
   crm_server:
